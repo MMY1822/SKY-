@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1109</width>
+    <height>651</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>816</width>
+    <height>457</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>99999</width>
+    <height>89999</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="oneroot">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>691</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>FASTBOOT</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>选择线刷包</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lujin">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>481</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="liulan">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>10</y>
+        <width>81</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>浏览...</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="fastboot">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>661</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="autoScroll">
+       <bool>true</bool>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="showGrid">
+       <bool>true</bool>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::NoPen</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="cornerButtonEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+      <property name="columnCount">
+       <number>7</number>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>470</y>
+        <width>85</width>
+        <height>74</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QRadioButton" name="xiaomi">
+         <property name="text">
+          <string>小米模式</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="oujia">
+         <property name="text">
+          <string>欧加真模式</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="tongyong">
+         <property name="text">
+          <string>通用模式</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>470</y>
+        <width>571</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="3">
+        <widget class="QPushButton" name="tiaozhen">
+         <property name="text">
+          <string>调整分区大小</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLineEdit" name="daxiao">
+         <property name="placeholderText">
+          <string>单位KB</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="readfastboot">
+         <property name="text">
+          <string>读信息</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="chuangjian">
+         <property name="text">
+          <string>创建分区</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QPushButton" name="quxiao">
+         <property name="text">
+          <string>取消</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="fenqu2">
+         <property name="placeholderText">
+          <string>输入分区名字</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="chachu1">
+         <property name="text">
+          <string>擦除</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="delete1">
+         <property name="text">
+          <string>删除</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="shuaxie1">
+         <property name="text">
+          <string>单分区刷写</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPushButton" name="chazhao">
+         <property name="text">
+          <string>查找分区</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLineEdit" name="chazhao1">
+         <property name="placeholderText">
+          <string>分区名字</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QPushButton" name="shuaxie2">
+         <property name="text">
+          <string>刷写</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>9008</string>
+     </attribute>
+     <widget class="QWidget" name="gridLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>671</width>
+        <height>89</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lujin_4">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="liulan_4">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>浏览...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lujin_2">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="yindao"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="liulan_2">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>浏览...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="liulan_yindao">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>浏览...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>选择PATH</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>选择XML</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>选择引导</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="edl">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>591</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="autoScroll">
+       <bool>true</bool>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="showGrid">
+       <bool>true</bool>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::NoPen</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="cornerButtonEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+      <property name="columnCount">
+       <number>7</number>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>选择</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>lun</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>分区名字</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>起始扇区</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>终止扇区</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>目标文件</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>目标路径</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>480</y>
+        <width>671</width>
+        <height>83</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="5">
+        <widget class="QPushButton" name="tiaozhen_4">
+         <property name="text">
+          <string>备份基带</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="6">
+        <widget class="QPushButton" name="chazhao_2">
+         <property name="text">
+          <string>查找分区</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="jiexifenqubiao">
+         <property name="text">
+          <string>解析分区表</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="fasong">
+         <property name="text">
+          <string>发送引导</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="6">
+        <widget class="QPushButton" name="shuaxie1_4">
+         <property name="text">
+          <string>备份分区表</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QComboBox" name="comboBox_2"/>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="chakanfenqubiao">
+         <property name="text">
+          <string>查看分区表</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="shuaxie2_5">
+         <property name="text">
+          <string>恢复出厂设置</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="chachu1_2">
+         <property name="text">
+          <string>擦除</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="9">
+        <widget class="QPushButton" name="shuaxie2_2">
+         <property name="text">
+          <string>刷写</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="8">
+        <widget class="QPushButton" name="quxiao_2">
+         <property name="text">
+          <string>备份全分区</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="9">
+        <widget class="QPushButton" name="shuaxie2_3">
+         <property name="text">
+          <string>取消</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="QPushButton" name="shuaxie2_4">
+         <property name="text">
+          <string>刷写分区表</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="8">
+        <widget class="QLineEdit" name="chazhao1_2">
+         <property name="placeholderText">
+          <string>分区名字</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="QPushButton" name="shuaxie1_2">
+         <property name="text">
+          <string>单分区刷写</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="backfenqu1">
+         <property name="text">
+          <string>备份选中分区</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>100</y>
+        <width>71</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="tabletTracking">
+       <bool>false</bool>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>自动选择端口号</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::PlainText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="yindaozidong">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>120</y>
+        <width>21</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="xuanzeyindao">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>160</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quanxuan">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>190</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>全选分区表</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quxiaoquanxuan">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>220</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>取消全选</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>页</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QTextBrowser" name="log">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>30</y>
+      <width>381</width>
+      <height>561</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="jindutiao">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>600</y>
+      <width>1051</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="jindutiao2">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>600</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1109</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>菜单</string>
+    </property>
+    <addaction name="shebei"/>
+    <addaction name="separator"/>
+    <addaction name="qudong1"/>
+    <addaction name="qudong2"/>
+    <addaction name="qudong3"/>
+    <addaction name="qudong4"/>
+    <addaction name="separator"/>
+    <addaction name="toupin1"/>
+    <addaction name="separator"/>
+    <addaction name="cmd1"/>
+    <addaction name="separator"/>
+    <addaction name="clear"/>
+    <addaction name="separator"/>
+    <addaction name="clear_ADB"/>
+   </widget>
+   <widget class="QMenu" name="menuADB">
+    <property name="title">
+     <string>ADB常用指令</string>
+    </property>
+    <addaction name="ADB_RB"/>
+    <addaction name="ADB_REC"/>
+    <addaction name="ADB_FASTBOOT"/>
+    <addaction name="ADB_FASTBOOTD"/>
+    <addaction name="ADB_EDL"/>
+    <addaction name="separator"/>
+    <addaction name="ADB_AB"/>
+    <addaction name="separator"/>
+    <addaction name="ADB_APK"/>
+    <addaction name="separator"/>
+    <addaction name="ADB_DEVICES"/>
+   </widget>
+   <widget class="QMenu" name="menuFASTBOOT">
+    <property name="title">
+     <string>FASTBOOT常用指令</string>
+    </property>
+    <addaction name="FB_REBOOT"/>
+    <addaction name="FB_REC"/>
+    <addaction name="FB_FB"/>
+    <addaction name="FB_FD"/>
+    <addaction name="FB_EDL1"/>
+    <addaction name="FB_EDL2"/>
+    <addaction name="separator"/>
+    <addaction name="FB_DE"/>
+    <addaction name="FB_FBD"/>
+    <addaction name="FB_AB"/>
+    <addaction name="FB_UNLOCK"/>
+    <addaction name="separator"/>
+    <addaction name="FB_UNBL"/>
+    <addaction name="FB_BL_2"/>
+   </widget>
+   <widget class="QMenu" name="menuEDL">
+    <property name="title">
+     <string>EDL指令</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_Bootloader"/>
+    <addaction name="action_Fastboot"/>
+    <addaction name="action_EDL"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuADB"/>
+   <addaction name="menuFASTBOOT"/>
+   <addaction name="menuEDL"/>
+  </widget>
+  <action name="shebei">
+   <property name="text">
+    <string>打开设备管理器</string>
+   </property>
+  </action>
+  <action name="qudong1">
+   <property name="text">
+    <string>安装安卓驱动</string>
+   </property>
+  </action>
+  <action name="qudong2">
+   <property name="text">
+    <string>安装9008驱动1</string>
+   </property>
+  </action>
+  <action name="qudong3">
+   <property name="text">
+    <string>安装9008驱动2</string>
+   </property>
+  </action>
+  <action name="qudong4">
+   <property name="text">
+    <string>安装微软驱动</string>
+   </property>
+  </action>
+  <action name="toupin1">
+   <property name="text">
+    <string>投屏</string>
+   </property>
+  </action>
+  <action name="ADB_REC">
+   <property name="text">
+    <string>重启到REC</string>
+   </property>
+  </action>
+  <action name="ADB_FASTBOOT">
+   <property name="text">
+    <string>重启到FASTBOOT</string>
+   </property>
+  </action>
+  <action name="ADB_FASTBOOTD">
+   <property name="text">
+    <string>重启到FASTBOOTD</string>
+   </property>
+  </action>
+  <action name="ADB_EDL">
+   <property name="text">
+    <string>重启到EDL</string>
+   </property>
+  </action>
+  <action name="ADB_AB">
+   <property name="text">
+    <string>查看AB分区状态</string>
+   </property>
+  </action>
+  <action name="ADB_APK">
+   <property name="text">
+    <string>安装APK</string>
+   </property>
+  </action>
+  <action name="FB_REBOOT">
+   <property name="text">
+    <string>重启</string>
+   </property>
+  </action>
+  <action name="FB_REC">
+   <property name="text">
+    <string>重启到REC</string>
+   </property>
+  </action>
+  <action name="FB_FB">
+   <property name="text">
+    <string>重启到BOOTLOADER</string>
+   </property>
+  </action>
+  <action name="FB_FD">
+   <property name="text">
+    <string>重启到FASTBOOTD</string>
+   </property>
+  </action>
+  <action name="FB_EDL1">
+   <property name="text">
+    <string>重启到EDL (1)</string>
+   </property>
+  </action>
+  <action name="FB_EDL2">
+   <property name="text">
+    <string>重启到EDL (2)</string>
+   </property>
+  </action>
+  <action name="FB_AB">
+   <property name="text">
+    <string>查看AB分区状态</string>
+   </property>
+  </action>
+  <action name="FB_UNLOCK">
+   <property name="text">
+    <string>查看解锁情况</string>
+   </property>
+  </action>
+  <action name="FB_UNBL">
+   <property name="text">
+    <string>解锁BL</string>
+   </property>
+  </action>
+  <action name="FB_BL_2">
+   <property name="text">
+    <string>回锁BL</string>
+   </property>
+  </action>
+  <action name="ADB_DEVICES">
+   <property name="text">
+    <string>检查设备连接状况</string>
+   </property>
+  </action>
+  <action name="cmd1">
+   <property name="text">
+    <string>CMD</string>
+   </property>
+  </action>
+  <action name="ADB_RB">
+   <property name="text">
+    <string>重启</string>
+   </property>
+  </action>
+  <action name="FB_DE">
+   <property name="text">
+    <string>查看设备连接状态</string>
+   </property>
+  </action>
+  <action name="FB_FBD">
+   <property name="text">
+    <string>查看当前处于FB还是FD状态</string>
+   </property>
+  </action>
+  <action name="clear">
+   <property name="text">
+    <string>清屏</string>
+   </property>
+  </action>
+  <action name="clear_ADB">
+   <property name="text">
+    <string>清理ADB进程</string>
+   </property>
+  </action>
+  <action name="action_EDL_3">
+   <property name="text">
+    <string>重启到EDL (3)</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>重启</string>
+   </property>
+  </action>
+  <action name="action_Bootloader">
+   <property name="text">
+    <string>重启到Bootloader</string>
+   </property>
+  </action>
+  <action name="action_Fastboot">
+   <property name="text">
+    <string>重启到Fastboot</string>
+   </property>
+  </action>
+  <action name="action_EDL">
+   <property name="text">
+    <string>重启到EDL</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
